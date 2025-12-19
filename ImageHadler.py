@@ -23,8 +23,10 @@ class ImageHandler:
             y = int(input("Введите новый размер по y"))
             if x >= 200 and y >= 200:
                 self.img = self.img.resize((x,y))
+                self.img.save(self.path)
             else:
                 print("Слишком маленький размер")
 
     def proc(self):
+
         return self.img
